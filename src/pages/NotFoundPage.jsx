@@ -1,117 +1,34 @@
 import { Link } from "react-router-dom";
-import {
-  FaFacebookF,
-  FaInstagram,
-  FaLinkedinIn,
-  FaGithub,
-} from "react-icons/fa";
+import { FaHome } from "react-icons/fa";
 
-export default function Footer() {
+export default function NotFoundPage() {
   return (
-    <footer className="bg-slate-900 text-white">
+    <section className="min-h-screen bg-gradient-to-r from-orange-50 via-white to-purple-50 flex items-center justify-center px-6">
 
-      <div className="max-w-7xl mx-auto px-6 py-16 grid md:grid-cols-4 gap-10">
+      <div className="bg-white rounded-[40px] shadow-2xl p-12 text-center max-w-xl">
 
-        <div>
+        <h1 className="text-8xl font-black text-orange-600">
+          404
+        </h1>
 
-          <h2 className="text-3xl font-black text-orange-500">
-            LearnSphere
-          </h2>
+        <h2 className="text-4xl font-bold mt-6">
+          Oops!
+        </h2>
 
-          <p className="mt-5 text-gray-400 leading-7">
-            Learn modern technologies through practical projects,
-            expert mentors and career-focused learning.
-          </p>
+        <p className="text-gray-600 mt-6 leading-8">
+          The page you're looking for doesn't exist or has been moved.
+        </p>
 
-        </div>
-
-        <div>
-
-          <h3 className="font-bold text-xl mb-5">
-            Quick Links
-          </h3>
-
-          <div className="space-y-3">
-
-            <Link
-              to="/"
-              className="block hover:text-orange-500"
-            >
-              Home
-            </Link>
-
-            <Link
-              to="/about"
-              className="block hover:text-orange-500"
-            >
-              About
-            </Link>
-
-            <Link
-              to="/contact"
-              className="block hover:text-orange-500"
-            >
-              Contact
-            </Link>
-
-          </div>
-
-        </div>
-
-        <div>
-
-          <h3 className="font-bold text-xl mb-5">
-            Resources
-          </h3>
-
-          <div className="space-y-3">
-
-            <p>Courses</p>
-
-            <p>Projects</p>
-
-            <p>Certificates</p>
-
-            <p>Community</p>
-
-          </div>
-
-        </div>
-
-        <div>
-
-          <h3 className="font-bold text-xl mb-5">
-            Follow Us
-          </h3>
-
-          <div className="flex gap-4">
-
-            <div className="w-11 h-11 rounded-full bg-slate-800 hover:bg-orange-500 duration-300 flex items-center justify-center cursor-pointer">
-              <FaFacebookF />
-            </div>
-
-            <div className="w-11 h-11 rounded-full bg-slate-800 hover:bg-pink-500 duration-300 flex items-center justify-center cursor-pointer">
-              <FaInstagram />
-            </div>
-
-            <div className="w-11 h-11 rounded-full bg-slate-800 hover:bg-blue-500 duration-300 flex items-center justify-center cursor-pointer">
-              <FaLinkedinIn />
-            </div>
-
-            <div className="w-11 h-11 rounded-full bg-slate-800 hover:bg-gray-500 duration-300 flex items-center justify-center cursor-pointer">
-              <FaGithub />
-            </div>
-
-          </div>
-
-        </div>
+        <Link
+          to="/"
+          className="inline-flex items-center gap-3 mt-10 bg-orange-600 hover:bg-orange-700 text-white px-8 py-4 rounded-full font-semibold transition"
+        >
+          <FaHome />
+          Back Home
+        </Link>
 
       </div>
 
-      <div className="border-t border-slate-700 py-6 text-center text-gray-400">
-        © 2026 LearnSphere. All Rights Reserved.
-      </div>
-
-    </footer>
+    </section>
   );
 }
