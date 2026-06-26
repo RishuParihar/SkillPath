@@ -1,0 +1,1 @@
+import {Link} from 'react-router-dom';export default ()=> <div className='min-h-screen flex flex-col items-center justify-center'><h1 className='text-8xl font-black text-emerald-600'>404</h1><p>Page Not Found</p><Link className='mt-4 bg-emerald-600 text-white px-5 py-3 rounded-full' to='/'>Go Home</Link></div>;

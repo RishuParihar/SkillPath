@@ -1,0 +1,1 @@
+export default function LandingPage(){return <div><h1>LearnSphere</h1></div>}

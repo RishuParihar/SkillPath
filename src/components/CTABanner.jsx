@@ -1,0 +1,1 @@
+export default function CTABanner(){return(<section className='py-20 bg-emerald-600 text-white text-center'><h2 className='text-4xl font-bold'>Start Your Learning Journey</h2><p className='mt-4'>Join thousands of learners today.</p><button className='mt-6 bg-white text-emerald-600 px-6 py-3 rounded-full'>Get Started</button></section>);}

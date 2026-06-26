@@ -1,0 +1,1 @@
+export default function Navbar(){return <nav style={{padding:20}}>LearnSphere | Home About Contact</nav>}
